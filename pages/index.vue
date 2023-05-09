@@ -1,12 +1,12 @@
 <template>
-  <div class="w-[100%] h-[100%] p-8 bg-gray-200 dark:bg-black">
+  <div class="w-[100%] h-[100%] px-8 bg-gray-200 dark:bg-black">
     <br />
-    <br />
-    <br />
+
     <div class="text-xl font-bold text-slate-900 dark:text-gray-200">
       Hello.
     </div>
 
+    <br />
     <div class="text-5xl font-bold text-slate-900 dark:text-gray-200">
       My name is Miraç ERDİN.
     </div>

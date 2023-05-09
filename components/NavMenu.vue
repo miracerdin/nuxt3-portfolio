@@ -7,18 +7,14 @@
       class="btn-icon-menu text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-200"
       @click="$emit('showMenu', false)"
     >
-      <svg
-        width="40"
-        height="40"
-        xmlns="http://www.w3.org/2000/svg"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-      >
-        <path
-          d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"
-        />
-      </svg>
+      <Icon
+        name="ic:twotone-close"
+        color="dark"
+        size="54px"
+        class="flex items-center justify-center"
+      />
     </button>
+
     <nav class="nav-menu text-slate-900 dark:text-gray-200">
       <!-- menu -->
       <nuxt-link to="/" @click="$emit('showMenu', false)">About Me</nuxt-link>

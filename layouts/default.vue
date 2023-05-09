@@ -6,28 +6,18 @@
     <Transition>
       <NavMenu v-if="state.showMenu" v-on:show-menu="setShowMenu(to)"></NavMenu>
     </Transition>
-    <!-- nutton nav menu open -->
-    <ModeSwitch />
-    <button
-      class="btn-icon-menu bg-gray-200 dark:bg-black"
-      @click="setShowMenu(true)"
-    >
-      <svg
-        width="40"
-        height="40"
-        clip-rule="evenodd"
-        fill-rule="evenodd"
-        stroke-linejoin="round"
-        stroke-miterlimit="2"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z"
-          fill-rule="nonzero"
+    <div class="flex justify-end">
+      <ModeSwitch class="flex justify-center items-center p-2" />
+      <button class="bg-gray-200 dark:bg-black" @click="setShowMenu(true)">
+        <Icon
+          name="ic:baseline-menu-open"
+          color="dark"
+          size="54px"
+          class="flex items-center justify-center"
         />
-      </svg>
-    </button>
+      </button>
+    </div>
+    <!-- nutton nav menu open -->
 
     <main>
       <NuxtPage />
