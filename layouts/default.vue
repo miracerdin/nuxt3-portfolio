@@ -12,7 +12,7 @@
         <Icon
           name="ic:baseline-menu-open"
           color="dark"
-          size="54px"
+          size="46px"
           class="flex items-center justify-center"
         />
       </button>
