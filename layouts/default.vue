@@ -42,7 +42,8 @@ body {
   background: #d9d9d9;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
 }
 .container {
   -webkit-box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
@@ -50,7 +51,7 @@ body {
   box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
   position: relative;
   min-height: 100vh;
-  padding: 30px;
+  padding: 1rem 0;
 }
 .btn-icon-menu {
   border: 0;

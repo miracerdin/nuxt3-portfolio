@@ -1,6 +1,6 @@
 <template>
   <div
-    class="dark:bg-transparent bg-gray-200 text-slate-900 dark:text-gray-200 container"
+    class="dark:bg-transparent bg-gray-200 text-slate-900 dark:text-gray-200 h-[100%]"
   >
     <h1 class="work-experience-title">Work Experience</h1>
     <div class="work-experience">

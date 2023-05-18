@@ -1,6 +1,6 @@
 <template>
   <div class="w-[100%] h-[100%] px-8 bg-gray-200 dark:bg-transparent mt-5 flex">
-    <div class="mt-7">
+    <div class="min-w-[100%] max-w-[50%]">
       <div class="text-xl font-bold text-slate-900 dark:text-gray-200">
         Hello.
       </div>
@@ -28,7 +28,7 @@
       </p>
     </div>
     <div>
-      <img src="/img/logo/home-main.svg" alt="" srcset="" />
+      <img src="/img/logo/home-main.svg" alt="home-main" />
     </div>
   </div>
 </template>

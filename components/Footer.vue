@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="footer dark:bg-black bg-gray-200 text-slate-900 dark:text-gray-200"
+    class="footer dark:bg-black bg-[#D1D5DB] text-slate-900 dark:text-gray-200"
   >
     <button
       class="btn-act dark:bg-gray-200 bg-black dark:text-slate-900 text-gray-200"
@@ -40,7 +40,7 @@
   left: 0;
   width: 100%;
   box-shadow: 1px 1px 1px #ccc;
-  padding: 12px 35px;
+  padding: 2px 35px;
   display: flex;
   align-items: center;
   z-index: 20;

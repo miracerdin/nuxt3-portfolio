@@ -1,6 +1,6 @@
 <template>
-  <div class="w-[100%] h-[100%] px-8 bg-gray-200 dark:bg-transparent mt-5 flex">
-    <div class="mt-7">
+  <div class="w-[100%] h-[100%] px-8 bg-gray-200 dark:bg-transparent flex mt-2">
+    <div class="min-w-[50%] max-w-[50%]">
       <div class="text-xl font-bold text-slate-900 dark:text-gray-200">
         Hello.
       </div>
@@ -13,8 +13,8 @@
       <p class="text-slate-900 dark:text-gray-200">
         I'm a <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-        frontend developer using Vue JS and Nuxt JS, 1 years experience. I have
-        been working in Pusula Kurumsal İş Çözümleri for 1 year.
+        . I am using Vue JS and Nuxt JS, 1 years experience. I have been working
+        in Pusula Kurumsal İş Çözümleri for 1 year.
       </p>
       <p class="text-slate-900 dark:text-gray-200">
         Frontend: <br /><br />
@@ -27,7 +27,7 @@
         ✔ Hobbies: Helicopter and plane.
       </p>
     </div>
-    <div>
+    <div class="min-w-[50%] max-w-[50%]]">
       <img src="/img/logo/home-main.svg" alt="" srcset="" />
     </div>
   </div>
@@ -36,7 +36,7 @@
 import { ref, onMounted } from "vue";
 const typeValue = ref("");
 const typeStatus = ref(false);
-const typeArray = ref(["fun", "awesome", "a journey", "life"]);
+const typeArray = ref(["frontend developer", "pilot", "husband"]);
 const typingSpeed = ref(200);
 const erasinSpeed = ref(100);
 const newTextDelay = ref(2000);
@@ -104,9 +104,6 @@ onMounted(() => {
 });
 </script>
 <style scoped>
-span.typed-text {
-  color: #d2b94b;
-}
 span.cursor {
   display: inline-block;
   margin-left: 3px;

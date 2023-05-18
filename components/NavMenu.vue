@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container-menu dark:bg-black bg-gray-200 text-slate-900 dark:text-gray-200"
+    class="container-menu dark:bg-black bg-gray-200 text-slate-900 dark:text-gray-200 h-[100%]"
   >
     <!-- nutton nav menu close -->
     <button
@@ -44,10 +44,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  z-index: 10;
-  padding: 60px;
+  height: 100%;
+  z-index: 1;
+  padding: 35px 60px;
   overflow-y: auto;
+}
+button {
+  position: absolute;
+  right: 60px;
 }
 .nav-menu {
   display: flex;
@@ -67,14 +71,7 @@
   margin-left: 5px;
   transition: 0.5s ease-in-out;
 }
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
+
 @media screen and (max-width: 769px) {
   .nav-menu {
     height: 70vh;

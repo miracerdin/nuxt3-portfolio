@@ -4,7 +4,7 @@
   >
     <div class="logo flex-1">
       <nuxt-link href="/home"
-        ><img src="/img/logo/logo.png" alt="brand"
+        ><img src="/img/logo/logo-color.png" alt="brand" color="text-slate-900"
       /></nuxt-link>
     </div>
     <div
@@ -16,7 +16,7 @@
         <Icon
           name="ic:twotone-home"
           color="dark"
-          size="32px"
+          size="24px"
           class="flex items-center justify-center"
         />Home</nuxt-link
       >
@@ -25,7 +25,7 @@
         ><Icon
           name="eos-icons:job"
           color="dark"
-          size="32px"
+          size="24px"
           class="flex items-center justify-center"
         />Work Experience</nuxt-link
       >
@@ -36,7 +36,7 @@
         ><Icon
           name="material-symbols:resume-outline"
           color="dark"
-          size="32px"
+          size="24px"
           class="flex items-center justify-center"
         />Resume</a
       >
@@ -50,11 +50,14 @@
       </Transition>
       <div class="flex justify-end">
         <ModeSwitch class="flex justify-center items-center p-2" />
-        <button class="bg-gray-200 dark:bg-black" @click="setShowMenu(true)">
+        <button
+          class="bg-transparent dark:bg-black mx-3"
+          @click="setShowMenu(true)"
+        >
           <Icon
             name="ic:baseline-menu-open"
             color="dark"
-            size="46px"
+            size="32px"
             class="flex items-center justify-center"
           />
         </button>
