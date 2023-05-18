@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[100%] h-[100%] px-8 bg-gray-200 dark:bg-transparent flex mt-2">
+  <div class="w-[100%] h-[70vh] px-8 bg-gray-200 dark:bg-transparent flex mt-2">
     <div class="min-w-[50%] max-w-[50%]">
       <div class="text-xl font-bold text-slate-900 dark:text-gray-200">
         Hello.
@@ -28,7 +28,11 @@
       </p>
     </div>
     <div class="min-w-[50%] max-w-[50%]]">
-      <img src="/img/logo/home-main.svg" alt="" srcset="" />
+      <img
+        src="/img/logo/home-main.svg"
+        alt="home-main"
+        class="h-[100%] w-[100%]"
+      />
     </div>
   </div>
 </template>
