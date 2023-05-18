@@ -1,9 +1,11 @@
 <template>
-  <div class="dark:bg-black bg-gray-200 text-slate-900 dark:text-gray-200">
+  <div
+    class="dark:bg-transparent bg-gray-200 text-slate-900 dark:text-gray-200 container"
+  >
     <h1 class="work-experience-title">Work Experience</h1>
     <div class="work-experience">
       <div
-        class="work-experience-item dark:bg-black dark:text-slate-900"
+        class="work-experience-item dark:bg-transparent dark:text-slate-900"
         v-for="we in workExperience"
         :key="we"
       >
@@ -27,7 +29,7 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .work-experience-title {
   padding: 0 30px;
 }
@@ -35,20 +37,20 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 30px;
+  margin-top: 2rem;
 }
 .work-experience-item {
   width: 50%;
 }
 .we-card {
   display: flex;
-  background-color: #d9d9d9;
+  background-color: #d1d5db;
   align-items: center;
   border-radius: 15px;
-  width: 98%;
+  width: 100%;
+  height: 100%;
   margin: 10px 1%;
-  padding: 15px;
-  height: 150px;
+  padding-left: 1rem;
   cursor: pointer;
 }
 .we-card:hover {

@@ -1,25 +1,13 @@
 <template>
   <!-- main content -->
   <div
-    class="container w-[96%] my-[30px] mx-[2%] dark:bg-black bg-gray-200 text-slate-900 dark:text-gray-200"
+    class="container w-[100%] dark:bg-[url('/img/logo/home-bg.jpg')] bg-gray-200 text-slate-900 dark:text-gray-200"
   >
-    <Transition>
-      <NavMenu v-if="state.showMenu" v-on:show-menu="setShowMenu(to)"></NavMenu>
-    </Transition>
-    <div class="flex justify-end">
-      <ModeSwitch class="flex justify-center items-center p-2" />
-      <button class="bg-gray-200 dark:bg-black" @click="setShowMenu(true)">
-        <Icon
-          name="ic:baseline-menu-open"
-          color="dark"
-          size="46px"
-          class="flex items-center justify-center"
-        />
-      </button>
-    </div>
+    <Header></Header>
+
     <!-- nutton nav menu open -->
 
-    <main>
+    <main class="mt-5">
       <NuxtPage />
     </main>
   </div>
@@ -42,8 +30,9 @@ const { enabled, toggleTheme } = useTheme();
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 :root {
-  --text-color: #333;
+  --text-color: #151718;
   --color-background: #fff;
+  --bg-color: #d9d9d9;
 }
 
 * {
@@ -53,21 +42,21 @@ body {
   background: #d9d9d9;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  width: 96vw;
+  width: 100vw;
 }
 .container {
-  border-radius: 15px;
-  padding: 30px;
+  -webkit-box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
   position: relative;
-  min-height: 80vh;
-  margin-bottom: 150px;
+  min-height: 100vh;
+  padding: 30px;
 }
 .btn-icon-menu {
   border: 0;
   background: none;
   position: absolute;
-  top: 60px;
-  right: 60px;
+
   cursor: pointer;
 }
 @media screen and (max-width: 769px) {

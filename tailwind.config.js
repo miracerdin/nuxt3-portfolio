@@ -29,6 +29,10 @@ module.exports = {
       "30px": "30px",
     },
   },
+  backgroundImage: {
+    "hero-pattern": "url('/img/logo/home-bg.jpg')",
+    "footer-texture": "url('/img/footer-texture.png')",
+  },
   darkMode: ["class", '[data-theme="dark"]'],
   plugins: [],
 };

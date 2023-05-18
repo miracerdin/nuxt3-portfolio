@@ -17,7 +17,9 @@
 
     <nav class="nav-menu text-slate-900 dark:text-gray-200">
       <!-- menu -->
-      <nuxt-link to="/" @click="$emit('showMenu', false)">About Me</nuxt-link>
+      <nuxt-link to="/home" @click="$emit('showMenu', false)"
+        >About Me</nuxt-link
+      >
       <nuxt-link to="/work-experience" @click="$emit('showMenu', false)"
         >Work Experience</nuxt-link
       >
@@ -36,7 +38,7 @@
     </nav>
   </div>
 </template>
-<style>
+<style scoped>
 .container-menu {
   position: fixed;
   top: 0;
@@ -45,7 +47,7 @@
   height: 100vh;
   z-index: 10;
   padding: 60px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .nav-menu {
   display: flex;
