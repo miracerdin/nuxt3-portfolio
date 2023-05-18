@@ -42,24 +42,8 @@ const erasinSpeed = ref(100);
 const newTextDelay = ref(2000);
 const typeArrayIndex = ref(0);
 const charIndex = ref(0);
-// const backgroundImageDark = "home-bg.jpg"; // Dark mode için arka plan resmi
-// const backgroundImageLight = "light-mode-resim.png";
-
-const { enabled, toggleTheme } = useTheme();
-
-// const isBackGroundDark = computed(() => {
-//   if (enabled) {
-//     return { "background-image": `url(${"home-bg.jpg"})` };
-//   } else {
-//     return { "background-image": `url(${"home-bg.jpg"})` };
-//   }
-// });
 
 const typeText = () => {
-  console.log(
-    "typeArray.value[typeArrayIndex.value]",
-    typeArray.value[typeArrayIndex.value]
-  );
   if (charIndex.value < typeArray.value[typeArrayIndex.value].length) {
     if (!typeStatus.value) typeStatus.value = true;
 
@@ -67,7 +51,7 @@ const typeText = () => {
       charIndex.value
     );
     charIndex.value += 1;
-    console.log("typeValue", typeValue);
+
     setTimeout(typeText, typingSpeed.value);
   } else {
     typeStatus.value = false;
@@ -76,7 +60,6 @@ const typeText = () => {
 };
 
 const eraseText = () => {
-  console.log("charIndex", charIndex.value);
   if (charIndex.value > 0) {
     if (!typeStatus.value) typeStatus.value = true;
 
@@ -85,8 +68,8 @@ const eraseText = () => {
       0,
       charIndex.value - 1
     );
-    console.log("typeValue.value", typeValue.value);
     charIndex.value -= 1;
+
     setTimeout(eraseText, erasinSpeed.value);
   } else {
     console.log("eraseText else", typeArrayIndex);
