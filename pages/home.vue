@@ -13,7 +13,7 @@
       <p class="text-slate-900 dark:text-gray-200">
         I'm a <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-        . I am using Vue JS and Nuxt JS, 1 years experience. I have been working
+        I am using Vue JS and Nuxt JS, 1 years experience. I have been working
         in Pusula Kurumsal İş Çözümleri for 1 year.
       </p>
       <p class="text-slate-900 dark:text-gray-200">
@@ -36,7 +36,7 @@
 import { ref, onMounted } from "vue";
 const typeValue = ref("");
 const typeStatus = ref(false);
-const typeArray = ref(["frontend developer", "pilot", "husband"]);
+const typeArray = ref(["frontend developer.", "pilot.", "husband."]);
 const typingSpeed = ref(200);
 const erasinSpeed = ref(100);
 const newTextDelay = ref(2000);
