@@ -12,32 +12,36 @@
     >
       <!-- menu -->
 
-      <nuxt-link to="/home" @click="$emit('showMenu', false)">
+      <nuxt-link to="/home" @click="$emit('showMenu', false)" class="text-lg">
         <Icon
           name="ic:twotone-home"
           color="dark"
           size="24px"
-          class="flex items-center justify-center"
+          class="flex items-center justify-center mr-[.3rem]"
         />Home</nuxt-link
       >
 
-      <nuxt-link to="/work-experience" @click="$emit('showMenu', false)"
+      <nuxt-link
+        to="/work-experience"
+        @click="$emit('showMenu', false)"
+        class="text-lg"
         ><Icon
           name="eos-icons:job"
           color="dark"
           size="24px"
-          class="flex items-center justify-center"
+          class="flex items-center justify-center mr-[.3rem]"
         />Work Experience</nuxt-link
       >
       <a
         href="/img/mirac_erdin_resume.pdf"
         download=""
         @click="$emit('showMenu', false)"
+        class="text-lg"
         ><Icon
           name="material-symbols:resume-outline"
           color="dark"
           size="24px"
-          class="flex items-center justify-center"
+          class="flex items-center justify-center mr-[.3rem]"
         />Resume</a
       >
     </div>
@@ -86,7 +90,7 @@ const { enabled, toggleTheme } = useTheme();
 .nav-menu {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   padding: 1rem;
 }

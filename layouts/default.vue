@@ -27,7 +27,7 @@ const { enabled, toggleTheme } = useTheme();
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
 
 :root {
   --text-color: #151718;
@@ -53,11 +53,13 @@ body {
   min-height: 100vh;
   padding: 1rem 0;
 }
+.container .content {
+  filter: contrast(10%);
+}
 .btn-icon-menu {
   border: 0;
   background: none;
   position: absolute;
-
   cursor: pointer;
 }
 @media screen and (max-width: 769px) {

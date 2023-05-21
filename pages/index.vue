@@ -1,34 +1,121 @@
 <template>
-  <div class="w-[100%] h-[100%] px-8 bg-gray-200 dark:bg-transparent mt-5 flex">
-    <div class="min-w-[100%] max-w-[50%]">
-      <div class="text-xl font-bold text-slate-900 dark:text-gray-200">
-        Hello.
+  <div>
+    <div
+      class="w-[100%] h-[80vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6"
+    >
+      <div
+        class="min-w-[50%] max-w-[50%] flex flex-col items-start justify-center"
+      >
+        <div class="text-[3rem] text-slate-900 dark:text-gray-200">
+          Hello.<span class="wave" role="img" aria-labelledby="wave"> 👋🏻 </span>
+        </div>
+
+        <br />
+        <div class="text-5xl text-slate-900 dark:text-gray-200 mb-3">
+          My name is <span class="font-bold">Miraç ERDİN.</span>
+        </div>
+        <p class="text-slate-900 dark:text-gray-200 text-[2rem] mt-[2rem]">
+          I'm a <span class="typed-text">{{ typeValue }}</span>
+          <!-- <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
+        I am using Vue JS and Nuxt JS, 1 years experience. I have been working
+        in Pusula Kurumsal İş Çözümleri for 1 year. -->
+        </p>
       </div>
-
-      <br />
-      <div class="text-5xl font-bold text-slate-900 dark:text-gray-200 mb-3">
-        My name is Miraç ERDİN.
-        <span class="wave" role="img" aria-labelledby="wave"> 👋🏻 </span>
+      <div class="min-w-[50%] max-w-[50%]]">
+        <img
+          src="/img/logo/home-main.svg"
+          alt="home-main"
+          class="h-[100%] w-[100%]"
+        />
       </div>
-      <p class="text-slate-900 dark:text-gray-200">
-        I'm a <span class="typed-text">{{ typeValue }}</span>
-        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-        frontend developer using Vue JS and Nuxt JS, 1 years experience. I have
-        been working in Pusula Kurumsal İş Çözümleri for 1 year.
-      </p>
-      <p class="text-slate-900 dark:text-gray-200">
-        Frontend: <br /><br />
-
-        ✅ &nbsp;&nbsp; Vue JS: Nuxt Js <br />
-        ✅ &nbsp;&nbsp; React JS <br />
-        ✅ &nbsp;&nbsp; CSS : Tailwindcss, Bootstrap<br /><br />
-
-        Other experiences:<br />
-        ✔ Hobbies: Helicopter and plane.
-      </p>
     </div>
+    <h1 class="text-[3rem] text-center my-[2rem]">Professional Skills</h1>
     <div>
-      <img src="/img/logo/home-main.svg" alt="home-main" />
+      <div class="flex justify-center gap-4">
+        <div class="professional">
+          <Icon
+            name="teenyicons:vue-outline"
+            :color="enabled"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="devicon-plain:nuxtjs-wordmark"
+            :color="enabled ? 'dark' : 'green'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="uil:react"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="material-symbols:javascript"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="logos:nodejs"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center gap-4 mb-[4rem]">
+        <div class="professional">
+          <Icon
+            name="mdi:git"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="mdi:firebase"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="mdi:material-ui"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+        <div class="professional">
+          <Icon
+            name="mdi:tailwind"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+
+        <div class="professional">
+          <Icon
+            name="akar-icons:css-fill"
+            :color="enabled ? 'dark' : '#5CE4FC'"
+            size="110px"
+            class="flex items-center justify-center icons"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -36,30 +123,17 @@
 import { ref, onMounted } from "vue";
 const typeValue = ref("");
 const typeStatus = ref(false);
-const typeArray = ref(["fun", "awesome", "a journey", "life"]);
+const typeArray = ref(["frontend developer.", "pilot.", "husband."]);
 const typingSpeed = ref(200);
 const erasinSpeed = ref(100);
 const newTextDelay = ref(2000);
 const typeArrayIndex = ref(0);
 const charIndex = ref(0);
-// const backgroundImageDark = "home-bg.jpg"; // Dark mode için arka plan resmi
-// const backgroundImageLight = "light-mode-resim.png";
 
 const { enabled, toggleTheme } = useTheme();
 
-// const isBackGroundDark = computed(() => {
-//   if (enabled) {
-//     return { "background-image": `url(${"home-bg.jpg"})` };
-//   } else {
-//     return { "background-image": `url(${"home-bg.jpg"})` };
-//   }
-// });
-
 const typeText = () => {
-  console.log(
-    "typeArray.value[typeArrayIndex.value]",
-    typeArray.value[typeArrayIndex.value]
-  );
+  console.log("enable", enabled);
   if (charIndex.value < typeArray.value[typeArrayIndex.value].length) {
     if (!typeStatus.value) typeStatus.value = true;
 
@@ -67,7 +141,7 @@ const typeText = () => {
       charIndex.value
     );
     charIndex.value += 1;
-    console.log("typeValue", typeValue);
+
     setTimeout(typeText, typingSpeed.value);
   } else {
     typeStatus.value = false;
@@ -76,7 +150,6 @@ const typeText = () => {
 };
 
 const eraseText = () => {
-  console.log("charIndex", charIndex.value);
   if (charIndex.value > 0) {
     if (!typeStatus.value) typeStatus.value = true;
 
@@ -85,8 +158,8 @@ const eraseText = () => {
       0,
       charIndex.value - 1
     );
-    console.log("typeValue.value", typeValue.value);
     charIndex.value -= 1;
+
     setTimeout(eraseText, erasinSpeed.value);
   } else {
     console.log("eraseText else", typeArrayIndex);
@@ -104,9 +177,6 @@ onMounted(() => {
 });
 </script>
 <style scoped>
-span.typed-text {
-  color: #d2b94b;
-}
 span.cursor {
   display: inline-block;
   margin-left: 3px;
@@ -117,7 +187,24 @@ span.cursor {
 span.cursor.typing {
   animation: none;
 }
-
+.professional {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: width 1s, height 1s;
+}
+.icons {
+  transition: width 0.3s, height 0.3s;
+}
+.professional .icons:hover {
+  width: 120px;
+  height: 120px;
+}
 @keyframes cursorBlink {
   49% {
     background-color: #fff;
