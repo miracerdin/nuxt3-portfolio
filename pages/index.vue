@@ -21,7 +21,7 @@
         in Pusula Kurumsal İş Çözümleri for 1 year. -->
         </p>
       </div>
-      <div class="min-w-[50%] max-w-[50%]]">
+      <div class="min-w-[50%] max-w-[50%]">
         <img
           src="/img/logo/home-main.svg"
           alt="home-main"
@@ -133,7 +133,6 @@ const charIndex = ref(0);
 const { enabled, toggleTheme } = useTheme();
 
 const typeText = () => {
-  console.log("enable", enabled);
   if (charIndex.value < typeArray.value[typeArrayIndex.value].length) {
     if (!typeStatus.value) typeStatus.value = true;
 
@@ -153,7 +152,6 @@ const eraseText = () => {
   if (charIndex.value > 0) {
     if (!typeStatus.value) typeStatus.value = true;
 
-    console.log("eraseText else", typeArrayIndex.value);
     typeValue.value = typeArray.value[typeArrayIndex.value].substring(
       0,
       charIndex.value - 1
@@ -162,7 +160,6 @@ const eraseText = () => {
 
     setTimeout(eraseText, erasinSpeed.value);
   } else {
-    console.log("eraseText else", typeArrayIndex);
     typeStatus.value = false;
     typeArrayIndex.value += 1;
     if (typeArrayIndex.value >= typeArray.value.length)

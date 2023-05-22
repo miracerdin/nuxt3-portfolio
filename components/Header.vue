@@ -20,7 +20,14 @@
           class="flex items-center justify-center mr-[.3rem]"
         />Home</nuxt-link
       >
-
+      <nuxt-link to="/about" @click="$emit('showMenu', false)" class="text-lg">
+        <Icon
+          name="material-symbols:person-outline"
+          color="dark"
+          size="24px"
+          class="flex items-center justify-center mr-[.3rem]"
+        />About</nuxt-link
+      >
       <nuxt-link
         to="/work-experience"
         @click="$emit('showMenu', false)"

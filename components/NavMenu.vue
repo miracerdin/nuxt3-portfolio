@@ -17,7 +17,7 @@
 
     <nav class="nav-menu text-slate-900 dark:text-gray-200">
       <!-- menu -->
-      <nuxt-link to="/home" @click="$emit('showMenu', false)"
+      <nuxt-link to="/about" @click="$emit('showMenu', false)"
         >About Me</nuxt-link
       >
       <nuxt-link to="/work-experience" @click="$emit('showMenu', false)"

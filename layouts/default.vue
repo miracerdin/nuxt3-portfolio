@@ -1,7 +1,7 @@
 <template>
   <!-- main content -->
   <div
-    class="container w-[100%] dark:bg-[url('/img/logo/home-bg.jpg')] bg-gray-200 text-slate-900 dark:text-gray-200"
+    class="container dark:bg-[url('/img/logo/home-bg.jpg')] bg-gray-200 text-slate-900 dark:text-gray-200"
   >
     <Header></Header>
 
@@ -10,9 +10,9 @@
     <main class="mt-5">
       <NuxtPage />
     </main>
+    <Footer></Footer>
   </div>
   <!-- footer -->
-  <Footer></Footer>
 </template>
 
 <script setup>
@@ -52,6 +52,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 1rem 0;
+  width: 100%;
 }
 .container .content {
   filter: contrast(10%);

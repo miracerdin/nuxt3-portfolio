@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="px-6 mt-[4rem] gap-3 flex flex-col w-[70%]">
+  <div class="flex justify-center items-center text-center">
+    <div class="px-6 mt-[4rem] gap-3 flex flex-col w-[30%]">
       <div class="text-4xl text-center">LET ME INTRODUCE MYSELF</div>
       <p class="text-lg leading-9 font-medium">
         I am a passionate JavaScript developer who loves working with React and
@@ -30,12 +30,7 @@
         for self-improvement. Moreover, my strong communication skills enable me
         to effectively collaborate within a team.
       </p>
-      <p>
-        I am an outgoing individual who is excited to explore new technologies.
-        My eagerness to continuously learn and acquire new skills fuels my drive
-        for self-improvement. Moreover, my strong communication skills enable me
-        to effectively collaborate within a team.
-      </p>
+
       <p class="text-slate-900 dark:text-gray-200">
         Frontend: <br /><br />
 
@@ -47,6 +42,8 @@
         ✔ Hobbies: Helicopter and plane.
       </p>
     </div>
-    <div class="avatar w-[30%]">Hi</div>
+    <div class="avatar w-[30%] flex items-center min-w-[20%]">
+      <img src="/img/logo/about.png" alt="about" />
+    </div>
   </div>
 </template>
