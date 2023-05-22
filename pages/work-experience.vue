@@ -6,7 +6,7 @@
       <h1 class="work-experience-title">Work Experience</h1>
       <div class="work-experience">
         <div
-          class="work-experience-item dark:bg-transparent dark:text-slate-900"
+          class="work-experience-item text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-300"
           v-for="we in workExperience"
           :key="we"
         >
@@ -42,20 +42,20 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 2rem;
+  margin: 10px 1%;
+  border-radius: 15px;
 }
 .work-experience-item {
   width: 50%;
+  border-radius: 15px;
 }
 .we-card {
   display: flex;
-  background-color: #d1d5db;
   align-items: center;
   border-radius: 15px;
   width: 100%;
   height: 100%;
-  margin: 10px 1%;
-  padding-left: 1rem;
+  padding: 10px 1%;
   cursor: pointer;
 }
 .we-card:hover {
