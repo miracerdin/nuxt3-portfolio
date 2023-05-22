@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="w-[100%] h-[80vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6"
+      class="w-[100%] h-[84vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6"
     >
       <div
         class="min-w-[50%] max-w-[50%] flex flex-col items-start justify-center"
