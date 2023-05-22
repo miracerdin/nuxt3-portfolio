@@ -1,7 +1,7 @@
 <template>
   <!-- main content -->
   <div
-    class="container w-full dark:bg-[url('/img/logo/home-bg.jpg')] bg-gray-200 text-slate-900 dark:text-gray-200"
+    class="container w-full dark:bg-[url('/img/logo/home-bg.jpg')] bg-no-repeat bg-cover bg-gray-200 text-slate-900 dark:text-gray-200"
   >
     <Header></Header>
 
