@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center text-center">
+  <div class="flex justify-center items-center">
     <div class="px-6 mt-[4rem] gap-3 flex flex-col w-[30%]">
       <div class="text-4xl text-center">LET ME INTRODUCE MYSELF</div>
       <p class="text-lg leading-9 font-medium">
