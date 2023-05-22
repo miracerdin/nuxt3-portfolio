@@ -29,91 +29,93 @@
         />
       </div>
     </div>
-    <h1 class="text-[3rem] text-center my-[2rem]">Professional Skills</h1>
-    <div>
-      <div class="flex justify-center gap-4">
-        <div class="professional">
-          <Icon
-            name="teenyicons:vue-outline"
-            :color="enabled ? 'dark' : 'green'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
+    <div class="h-[100vh] flex flex-col justify-center">
+      <h1 class="text-[3rem] text-center my-[2rem]">Professional Skills</h1>
+      <div>
+        <div class="flex justify-center gap-4">
+          <div class="professional">
+            <Icon
+              name="teenyicons:vue-outline"
+              :color="enabled ? 'dark' : 'green'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="devicon-plain:nuxtjs-wordmark"
+              :color="enabled ? 'dark' : 'green'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="uil:react"
+              :color="enabled ? 'dark' : '#5CE4FC'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="material-symbols:javascript"
+              :color="enabled ? 'dark' : '#5CE4FC'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="logos:nodejs"
+              :color="enabled ? 'dark' : '#5CE4FC'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
         </div>
-        <div class="professional">
-          <Icon
-            name="devicon-plain:nuxtjs-wordmark"
-            :color="enabled ? 'dark' : 'green'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-        <div class="professional">
-          <Icon
-            name="uil:react"
-            :color="enabled ? 'dark' : '#5CE4FC'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-        <div class="professional">
-          <Icon
-            name="material-symbols:javascript"
-            :color="enabled ? 'dark' : '#5CE4FC'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-        <div class="professional">
-          <Icon
-            name="logos:nodejs"
-            :color="enabled ? 'dark' : '#5CE4FC'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-      </div>
-      <div class="flex justify-center gap-4 mb-[4rem]">
-        <div class="professional">
-          <Icon
-            name="mdi:git"
-            :color="enabled ? 'dark' : '#F34F28'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-        <div class="professional">
-          <Icon
-            name="mdi:firebase"
-            :color="enabled ? 'dark' : '#FCCA3F'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-        <div class="professional">
-          <Icon
-            name="mdi:material-ui"
-            :color="enabled ? 'dark' : '#007FFF'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
-        <div class="professional">
-          <Icon
-            name="mdi:tailwind"
-            :color="enabled ? 'dark' : '#38BDF8'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
-        </div>
+        <div class="flex justify-center gap-4 mb-[4rem]">
+          <div class="professional">
+            <Icon
+              name="mdi:git"
+              :color="enabled ? 'dark' : '#F34F28'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="mdi:firebase"
+              :color="enabled ? 'dark' : '#FCCA3F'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="mdi:material-ui"
+              :color="enabled ? 'dark' : '#007FFF'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
+          <div class="professional">
+            <Icon
+              name="mdi:tailwind"
+              :color="enabled ? 'dark' : '#38BDF8'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
 
-        <div class="professional">
-          <Icon
-            name="akar-icons:css-fill"
-            :color="enabled ? 'dark' : '#33A9DC'"
-            size="110px"
-            class="flex items-center justify-center icons"
-          />
+          <div class="professional">
+            <Icon
+              name="akar-icons:css-fill"
+              :color="enabled ? 'dark' : '#33A9DC'"
+              size="110px"
+              class="flex items-center justify-center icons"
+            />
+          </div>
         </div>
       </div>
     </div>
