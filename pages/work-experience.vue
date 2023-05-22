@@ -1,27 +1,31 @@
 <template>
-  <div
-    class="dark:bg-transparent bg-gray-200 text-slate-900 dark:text-gray-200 h-[100%]"
-  >
-    <h1 class="work-experience-title">Work Experience</h1>
-    <div class="work-experience">
-      <div
-        class="work-experience-item dark:bg-transparent dark:text-slate-900"
-        v-for="we in workExperience"
-        :key="we"
-      >
-        <div class="we-card">
-          <div class="we-card-logo">
-            <img :src="we.logo" :alt="`${we.title} logo`" />
-          </div>
-          <div class="we-card-content">
-            <div class="we-card-title">
-              {{ we.title }}
+  <div class="flex justify-center">
+    <div
+      class="dark:bg-transparent bg-gray-200 text-slate-900 dark:text-gray-200 h-[100%] flex flex-col justify-center items-center mt-[2rem] w-[70%]"
+    >
+      <h1 class="work-experience-title">Work Experience</h1>
+      <div class="work-experience">
+        <div
+          class="work-experience-item dark:bg-transparent dark:text-slate-900"
+          v-for="we in workExperience"
+          :key="we"
+        >
+          <div class="we-card">
+            <div class="we-card-logo">
+              <img :src="we.logo" :alt="`${we.title} logo`" />
             </div>
-            <div class="we-card-date">
-              {{ we.date }}
-            </div>
-            <div class="we-card-link">
-              <a target="_BLANK" :href="we.link">{{ getLinkTitle(we.link) }}</a>
+            <div class="we-card-content">
+              <div class="we-card-title">
+                {{ we.title }}
+              </div>
+              <div class="we-card-date">
+                {{ we.date }}
+              </div>
+              <div class="we-card-link">
+                <a target="_BLANK" :href="we.link">{{
+                  getLinkTitle(we.link)
+                }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -31,6 +35,7 @@
 </template>
 <style scoped>
 .work-experience-title {
+  font-size: x-large;
   padding: 0 30px;
 }
 .work-experience {
