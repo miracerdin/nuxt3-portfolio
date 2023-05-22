@@ -3,19 +3,19 @@
     class="container-menu dark:bg-black bg-gray-200 text-slate-900 dark:text-gray-200 h-[100%]"
   >
     <!-- nutton nav menu close -->
-    <button
-      class="btn-icon-menu text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-200"
-      @click="$emit('showMenu', false)"
-    >
-      <Icon
-        name="ic:twotone-close"
-        color="dark"
-        size="46px"
-        class="flex items-center justify-center"
-      />
-    </button>
 
     <nav class="nav-menu text-slate-900 dark:text-gray-200">
+      <button
+        class="btn-icon-menu text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-200"
+        @click="$emit('showMenu', false)"
+      >
+        <Icon
+          name="ic:twotone-close"
+          color="dark"
+          size="46px"
+          class="flex items-center justify-center"
+        />
+      </button>
       <!-- menu -->
       <nuxt-link to="/about" @click="$emit('showMenu', false)"
         >About Me</nuxt-link
@@ -45,20 +45,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 21;
   padding: 35px 60px;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 button {
   position: absolute;
-  right: 60px;
+  right: 19%;
+  top: 8%;
 }
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
   height: 75vh;
+  width: 60%;
   text-align: center;
+
   margin-bottom: 100px;
 }
 .nav-menu a {
