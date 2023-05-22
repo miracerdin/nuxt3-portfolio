@@ -1,7 +1,7 @@
 <template>
   <!-- main content -->
   <div
-    class="container dark:bg-[url('/img/logo/home-bg.jpg')] bg-gray-200 text-slate-900 dark:text-gray-200"
+    class="container w-full dark:bg-[url('/img/logo/home-bg.jpg')] bg-gray-200 text-slate-900 dark:text-gray-200"
   >
     <Header></Header>
 
@@ -42,8 +42,6 @@ body {
   background: #d9d9d9;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  width: 100%;
-  height: 100%;
 }
 .container {
   -webkit-box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
@@ -52,7 +50,8 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 1rem 0;
-  width: 100%;
+  min-width: 100%;
+  height: 100%;
 }
 .container .content {
   filter: contrast(10%);
