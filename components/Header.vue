@@ -2,7 +2,7 @@
   <div
     class="header text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-300 rounded w-full"
   >
-    <div class="logo flex-1">
+    <div class="logo">
       <nuxt-link href="/home"
         ><img src="/img/logo/logo-color.png" alt="brand" color="text-slate-900"
       /></nuxt-link>

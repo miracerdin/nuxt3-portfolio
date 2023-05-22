@@ -41,6 +41,7 @@
   width: 100%;
   box-shadow: 1px 1px 1px #ccc;
   padding: 2px 35px;
+  padding-left: 27rem;
   display: flex;
   align-items: center;
   z-index: 20;

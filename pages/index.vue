@@ -35,7 +35,7 @@
         <div class="professional">
           <Icon
             name="teenyicons:vue-outline"
-            :color="enabled"
+            :color="enabled ? 'dark' : 'green'"
             size="110px"
             class="flex items-center justify-center icons"
           />
@@ -77,7 +77,7 @@
         <div class="professional">
           <Icon
             name="mdi:git"
-            :color="enabled ? 'dark' : '#5CE4FC'"
+            :color="enabled ? 'dark' : '#F34F28'"
             size="110px"
             class="flex items-center justify-center icons"
           />
@@ -85,7 +85,7 @@
         <div class="professional">
           <Icon
             name="mdi:firebase"
-            :color="enabled ? 'dark' : '#5CE4FC'"
+            :color="enabled ? 'dark' : '#FCCA3F'"
             size="110px"
             class="flex items-center justify-center icons"
           />
@@ -93,7 +93,7 @@
         <div class="professional">
           <Icon
             name="mdi:material-ui"
-            :color="enabled ? 'dark' : '#5CE4FC'"
+            :color="enabled ? 'dark' : '#007FFF'"
             size="110px"
             class="flex items-center justify-center icons"
           />
@@ -101,7 +101,7 @@
         <div class="professional">
           <Icon
             name="mdi:tailwind"
-            :color="enabled ? 'dark' : '#5CE4FC'"
+            :color="enabled ? 'dark' : '#38BDF8'"
             size="110px"
             class="flex items-center justify-center icons"
           />
@@ -110,7 +110,7 @@
         <div class="professional">
           <Icon
             name="akar-icons:css-fill"
-            :color="enabled ? 'dark' : '#5CE4FC'"
+            :color="enabled ? 'dark' : '#33A9DC'"
             size="110px"
             class="flex items-center justify-center icons"
           />
