@@ -1,8 +1,6 @@
 <template>
   <div class="flex flex-col justify-center items-center">
-    <div
-      class="w-[50%] h-[84vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6"
-    >
+    <div class="h-[84vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6">
       <div
         class="min-w-[50%] max-w-[50%] flex flex-col items-start justify-center"
       >
@@ -29,7 +27,9 @@
         />
       </div>
     </div>
-    <div class="h-[100vh] flex flex-col justify-center">
+    <div
+      class="profession w-[100%] h-[100vh] flex flex-col justify-center items-center"
+    >
       <h1 class="text-[3rem] text-center my-[2rem]">Professional Skills</h1>
       <div>
         <div class="flex justify-center gap-4">
@@ -249,10 +249,43 @@ span.cursor.typing {
     transform: rotate(0deg);
   }
 }
+@media screen and (max-width: 1180px) {
+  .professional {
+    width: 130px;
+    height: 130px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: width 1s, height 1s;
+  }
+}
 @media screen and (max-width: 769px) {
-  .about-me {
-    width: 50%;
-    padding: 10px;
+  .professional {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: width 1s, height 1s;
+  }
+}
+@media screen and (max-width: 560px) {
+  .professional {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: width 1s, height 1s;
   }
 }
 </style>

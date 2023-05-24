@@ -1,6 +1,6 @@
 <template>
   <div
-    class="header text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-300 rounded w-full"
+    class="header md:max-xl:flex text-slate-900 dark:text-gray-200 dark:bg-black bg-gray-300 rounded w-full"
   >
     <div class="logo">
       <nuxt-link href="/home"
@@ -12,15 +12,23 @@
     >
       <!-- menu -->
 
-      <nuxt-link to="/home" @click="$emit('showMenu', false)" class="text-lg">
+      <nuxt-link
+        to="/home"
+        @click="$emit('showMenu', false)"
+        class="text-sm md:text-base"
+      >
         <Icon
           name="ic:twotone-home"
           color="dark"
           size="24px"
-          class="flex items-center justify-center mr-[.3rem]"
+          class="flex items-center justify-center mr-[.3rem] sm:mr-[.1rem]"
         />Home</nuxt-link
       >
-      <nuxt-link to="/about" @click="$emit('showMenu', false)" class="text-lg">
+      <nuxt-link
+        to="/about"
+        @click="$emit('showMenu', false)"
+        class="text-sm md:text-base"
+      >
         <Icon
           name="material-symbols:person-outline"
           color="dark"
@@ -31,7 +39,7 @@
       <nuxt-link
         to="/work-experience"
         @click="$emit('showMenu', false)"
-        class="text-lg"
+        class="text-sm md:text-base"
         ><Icon
           name="eos-icons:job"
           color="dark"
@@ -43,7 +51,7 @@
         href="/img/mirac_erdin_resume.pdf"
         download=""
         @click="$emit('showMenu', false)"
-        class="text-lg"
+        class="text-sm md:text-base"
         ><Icon
           name="material-symbols:resume-outline"
           color="dark"
@@ -105,5 +113,40 @@ const { enabled, toggleTheme } = useTheme();
   width: 60px;
   height: 60px;
   border-radius: 100%;
+}
+
+@media screen and (max-width: 1180px) {
+  .header {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: width 1s, height 1s;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: width 1s, height 1s;
+  }
 }
 </style>

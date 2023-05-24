@@ -1,6 +1,6 @@
 <template>
-  <div class="flex justify-center items-center">
-    <div class="px-6 mt-[4rem] gap-3 flex flex-col w-[30%]">
+  <div class="flex justify-center items-center sm:flex-col h-[100%] w-full">
+    <div class="px-6 mt-[4rem] gap-3 flex flex-col md:w-[70%]">
       <div class="text-4xl text-center">LET ME INTRODUCE MYSELF</div>
       <p class="text-lg leading-9 font-medium">
         I am a passionate JavaScript developer who loves working with React and
@@ -42,7 +42,9 @@
         ✔ Hobbies: Helicopter and plane.
       </p>
     </div>
-    <div class="avatar w-[30%] flex items-center min-w-[20%]">
+    <div
+      class="avatar w-[30%] md:w-[70%] flex items-center min-w-[20%] sm:mt-[1rem]"
+    >
       <img src="/img/logo/about.png" alt="about" />
     </div>
   </div>
