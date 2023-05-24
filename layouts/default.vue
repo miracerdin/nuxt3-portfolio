@@ -36,6 +36,8 @@ const { enabled, toggleTheme } = useTheme();
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -48,10 +50,9 @@ body {
   -moz-box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 23px 0px rgba(0, 0, 0, 0.75);
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 1rem 0;
   min-width: 100%;
-  height: 100%;
 }
 .container .content {
   filter: contrast(10%);
@@ -68,8 +69,7 @@ body {
     right: 30px;
   }
   .container {
-    min-height: 85vh;
-    margin-bottom: 120px;
+    min-height: 100%;
   }
 }
 </style>

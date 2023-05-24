@@ -43,7 +43,7 @@
       </p>
     </div>
     <div
-      class="avatar w-[30%] md:w-[70%] flex items-center min-w-[20%] sm:mt-[1rem]"
+      class="avatar w-[30%] md:w-[70%] flex items-center min-w-[20%] sm:mt-[1rem] sm:mb-[4rem]"
     >
       <img src="/img/logo/about.png" alt="about" />
     </div>
