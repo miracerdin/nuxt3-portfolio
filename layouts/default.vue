@@ -15,17 +15,6 @@
   <!-- footer -->
 </template>
 
-<script setup>
-const state = reactive({
-  showMenu: false,
-});
-const setShowMenu = (to) => {
-  state.showMenu = to;
-};
-
-const { enabled, toggleTheme } = useTheme();
-</script>
-
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
 

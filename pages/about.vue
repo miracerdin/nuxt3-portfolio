@@ -1,6 +1,8 @@
 <template>
   <div class="flex justify-center items-center sm:flex-col h-[100%] w-full">
-    <div class="px-6 mt-[4rem] gap-3 flex flex-col md:w-[70%]">
+    <div
+      class="px-6 mt-[4rem] gap-3 flex flex-col md:w-[70%] xl:w-[60%] xxl:w-[60%]"
+    >
       <div class="text-4xl text-center">LET ME INTRODUCE MYSELF</div>
       <p class="text-lg leading-9 font-medium">
         I am a passionate JavaScript developer who loves working with React and
