@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="flex flex-col h-[100vh] justify-center items-center container bg-transparent"
-  >
-    <div class="h-[84vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6 cover">
+  <div class="flex flex-col justify-center items-center bg-transparent">
+    <div class="px-8 bg-gray-200 dark:bg-transparent flex mt-6">
       <div
         class="min-w-[50%] max-w-[50%] flex flex-col items-start justify-center"
       >
