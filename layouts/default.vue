@@ -7,7 +7,9 @@
 
     <!-- nutton nav menu open -->
 
-    <main class="mt-5">
+    <main
+      class="mt-5 dark:bg-[url('/img/logo/home-bg.jpg')] bg-no-repeat bg-cover"
+    >
       <NuxtPage />
     </main>
     <Footer></Footer>

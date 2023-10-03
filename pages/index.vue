@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
-    <div class="h-[84vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6">
+  <div
+    class="flex flex-col h-[100vh] justify-center items-center container bg-transparent"
+  >
+    <div class="h-[84vh] px-8 bg-gray-200 dark:bg-transparent flex mt-6 cover">
       <div
         class="min-w-[50%] max-w-[50%] flex flex-col items-start justify-center"
       >
@@ -28,7 +30,7 @@
       </div>
     </div>
     <div
-      class="profession w-[100%] h-[100vh] flex flex-col justify-center items-center"
+      class="w-[100%] h-[100vh] flex flex-col justify-center items-center dark:bg-transparent bg-gray-200"
     >
       <h1 class="text-[3rem] text-center my-[2rem]">Professional Skills</h1>
       <div>

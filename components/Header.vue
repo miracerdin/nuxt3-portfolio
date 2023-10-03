@@ -92,15 +92,12 @@ const state = reactive({
 const setShowMenu = (to) => {
   state.showMenu = to;
 };
-
-const { enabled, toggleTheme } = useTheme();
 </script>
 <style scoped>
 .header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 1rem;
 }
 .nav-menu {
   display: flex;

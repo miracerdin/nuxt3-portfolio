@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-center items-center sm:flex-col h-[100%] w-full">
+  <div
+    class="flex justify-center items-center sm:flex-col w-full dark:bg-[url('/img/logo/home-bg.jpg')] bg-no-repeat bg-cover bg-gray-200"
+  >
     <div
       class="px-6 mt-[4rem] gap-3 flex flex-col md:w-[70%] xl:w-[60%] xxl:w-[60%]"
     >

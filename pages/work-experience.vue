@@ -1,8 +1,6 @@
 <template>
-  <div class="flex justify-center">
-    <div
-      class="dark:bg-transparent bg-gray-200 text-slate-900 dark:text-gray-200 h-[100%] flex flex-col justify-center items-center mt-[2rem] w-[70%]"
-    >
+  <div class="dark:bg-transparent bg-gray-200">
+    <div class="dark:bg-transparent bg-gray-200 h-[100vh]">
       <h1 class="work-experience-title">Work Experience</h1>
       <div class="work-experience">
         <div
